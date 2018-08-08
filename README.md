@@ -32,5 +32,8 @@ sudo apt-get install google-chrome-stable
 Step 9) 
 Build again, this time we get a pass. 
 
+Step 10) 
+Fix SMTP settings (already had sendgrid so used that for smtp) 
+
 # The Test
 After figuring out Java, JUnit, Maven, etc with some research I setup a project with a single test that scrapes the Blockchain Wikipedia article as spec'd.  
