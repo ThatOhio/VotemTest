@@ -12,17 +12,17 @@ Step 4)
 Configure Java and Maven in the Global Tool Configuration of jenkins 
 
 Step 5)
-Create test and github repository (alot happened here but I was toying around and didn't want to note all the steps as many were unnecessaru) 
+Create test and github repository (alot happened here but I was toying around and didn't want to note all the steps as many were unnecessary) 
 
 Step 6)
-Setup jenkins job to request, pulling code from the github repository (https://github.com/ThatOhio/VotemTest), building periodically (at 2 am), building using Maven, publishing JUnit results, and sending an email. 
+Setup jenkins job to request, pulling code from the github repository (this repo), building periodically (at 2 am), building using Maven, publishing JUnit results, and sending an email. 
 
 Step 7) 
 Trigger a build to see if it worked. 
 
 Step 8) 
 Forget to actually install Chrome, so lets do that with 
-```java
+```
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 echo 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' | sudo tee /etc/apt/sources.list.d/google-chrome.list
 sudo apt-get update 
